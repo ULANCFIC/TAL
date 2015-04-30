@@ -1,4 +1,5 @@
 FROM ubuntu:14.04
+RUN apt-get dist-upgrade
 RUN apt-get -y update
 RUN apt-get install -y git
 RUN apt-get install -y apache2

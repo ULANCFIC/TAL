@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 RUN apt-get update
 RUN apt-get install -y git
 RUN apt-get install -y apache2
-RUN apt-get install -y php5
+RUN apt-get install -y php5 --fix-missing
 RUN apt-get install -y libapache2-mod-php5
 RUN apt-get install -y php5-mcrypt
 RUN service apache2 stop
